@@ -233,7 +233,7 @@ function verifyPaystackSignature(signature, body) {
 }
 
 // 4. Get User Details
-app.get("/member-details", (req, res) => {
+app.get("/member", (req, res) => {
   const { userId } = req.query;
   if (!userId) {
     return res.status(400).json({ message: "User ID is required" });
