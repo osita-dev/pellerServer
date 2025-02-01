@@ -11,7 +11,7 @@ require("dotenv").config();
 const app = express();
 app.use(
   cors({
-    origin: 'https://peller-nation.vercel.app/',
+    origin: 'https://peller-nation.vercel.app',
     credentials: true,
   })
 );
